@@ -6,8 +6,6 @@ app = Flask(__name__)
 
 lord = RequestLord()
 
-character = None
-
 
 @app.route('/')
 def home():
