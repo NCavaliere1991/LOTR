@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+    {% for char in characters %}
+        <li><a href="{{url_for('quotes', id=char[1], name=char[0])}}">{{ char[0] }}</a></li>
+        {% endfor %}
+        </ul>
+</body>
+</html>
