@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Quotes</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-    {% if not quotes %}
-    <h1>{{name}} does not have any quotes in the movies!</h1>
-    {% else %}
-        <h1>{{name}}'s quotes:</h1>
-    <ul>
-    {% for quote in quotes %}
-        <li>{{ quote }}</li>
-        {% endfor %}
-        </ul>
-    {% endif %}
+        <h1>{{name}}'s random quote:</h1>
+    <h2>{{quote}}</h2>
 </body>
 </html>
