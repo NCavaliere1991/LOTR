@@ -9,3 +9,10 @@ h2 {
 h3 {
     text-align: center;
 }
+
+img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 20%;
+    display: block;
+}
