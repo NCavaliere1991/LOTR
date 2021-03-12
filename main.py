@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from RequestLord import RequestLord
+from character_list import pic_urls
 
 app = Flask(__name__)
 
@@ -17,8 +18,9 @@ def home():
 def quotes():
     id = request.args.get('id')
     name = request.args.get('name')
+    pics = pic_urls
     lord.get_quotes(id)
-    return render_template("quotes.html", quote=lord.random_quote, name=name)
+    return render_template("quotes.html", quote=lord.random_quote, name=name, pics=pics)
 
 
 if __name__ == "__main__":
